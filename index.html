@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitude Labs | Persistent Adaptive Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Instrument Serif"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#3b82f6',
+                        'brand-grey': '#475569',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for specific visual tweaks */
+        .hero-text-shadow {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-[#475569] bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 lg:px-10 bg-transparent">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+            <a href="#" class="text-3xl font-serif tracking-tight text-[#3b82f6] relative">
+                Cognitude Labs<span class="absolute top-0 -right-3 text-[10px] font-sans font-normal text-[#475569]">TM</span>
+            </a>
+        </div>
+
+        <!-- Center Menu (Desktop) -->
+        <div class="hidden lg:flex items-center gap-8">
+            <div class="group relative flex items-center gap-1 cursor-pointer">
+                <span class="text-[14px] font-medium text-[#475569]">Alva Platform</span>
+                <svg class="w-3 h-3 text-[#475569]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <div class="group relative flex items-center gap-1 cursor-pointer">
+                <span class="text-[14px] font-medium text-[#475569]">Agents</span>
+                <svg class="w-3 h-3 text-[#475569]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <div class="group relative flex items-center gap-1 cursor-pointer">
+                <span class="text-[14px] font-medium text-[#475569]">Memory Systems</span>
+                <svg class="w-3 h-3 text-[#475569]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <div class="group relative flex items-center gap-1 cursor-pointer">
+                <span class="text-[14px] font-medium text-[#475569]">Research</span>
+                <svg class="w-3 h-3 text-[#475569]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <div class="group relative flex items-center gap-1 cursor-pointer">
+                <span class="text-[14px] font-medium text-[#475569]">Case Studies</span>
+                <svg class="w-3 h-3 text-[#475569]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <a href="#" class="text-[14px] font-medium text-[#475569]">API</a>
+        </div>
+
+        <!-- Right Menu -->
+        <div class="flex items-center gap-6">
+            <a href="#" class="hidden md:block text-[14px] font-medium text-[#475569]">Mission</a>
+            <a href="#" class="hidden md:block text-[14px] font-medium text-[#475569]">Team</a>
+            <a href="#" class="bg-[#3b82f6] text-white text-[14px] font-medium px-5 py-2.5 rounded-full hover:bg-opacity-90 transition-colors">
+                Book a Demo
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="relative w-full h-screen min-h-[800px] flex flex-col items-center justify-start overflow-hidden bg-[#e6e6e4]">
+        
+        <!-- Background Image Placeholder (Simulating the Chair + Laptop + Room) -->
+        <img src="https://placehold.co/1920x1080/e6e6e4/a3a3a3?text=Cognitude+Labs+Persistent+Context+Environment" 
+             alt="Cognitude Labs Learning Environment" 
+             class="absolute inset-0 w-full h-full object-cover z-0">
+
+        <!-- Content Overlay -->
+        <div class="relative z-10 flex flex-col items-center w-full h-full pt-32 md:pt-28">
+            
+            <!-- Headline -->
+            <h1 class="text-6xl md:text-[5.5rem] lg:text-[6.5rem] leading-[0.9] font-serif text-center text-[#475569] tracking-tight mb-8 hero-text-shadow">
+                Reducing uncertainty <br>
+                with persistent context
+            </h1>
+
+            <p class="text-lg md:text-xl text-[#475569] max-w-2xl text-center font-medium opacity-80">
+                Cognitude Labs builds adaptive learning agents that maintain context <br class="hidden md:block"> across systems for a personalized educational journey.
+            </p>
+
+            <!-- Spacer -->
+            <div class="flex-grow"></div>
+
+            <!-- Floating CTA Button -->
+            <div class="mb-24 md:mb-32 lg:mb-40">
+                <a href="#" class="inline-flex items-center justify-center bg-[#3b82f6] text-white text-[15px] font-medium px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-0.5">
+                    Start Learning with Alva
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Logos Section -->
+    <section class="bg-white py-10 border-b border-[#475569]/10">
+        <div class="max-w-[1400px] mx-auto px-6">
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-12 opacity-70">
+                <!-- Academic & Research Partners -->
+                <img src="https://placehold.co/120x35/white/475569?text=HVL+RESEARCH" alt="University Research" class="h-6 md:h-7 w-auto object-contain">
+                
+                <img src="https://placehold.co/100x35/white/475569?text=ALVA.SO" alt="Alva Platform" class="h-8 md:h-9 w-auto object-contain">
+                
+                <div class="flex items-center gap-2 text-[#475569] font-bold">
+                    <img src="https://placehold.co/30x30/3b82f6/white?text=C" alt="Cognitude Icon" class="h-6 w-auto rounded">
+                    <span>COGNITUDE</span>
+                </div>
+
+                <img src="https://placehold.co/100x40/white/475569?text=AGENTIC" alt="Agentic Systems" class="h-7 md:h-8 w-auto object-contain">
+                
+                <img src="https://placehold.co/120x35/white/475569?text=ADAPTIVE" alt="Adaptive Learning" class="h-5 md:h-6 w-auto object-contain">
+                
+                <img src="https://placehold.co/110x35/white/475569?text=PERSISTENT" alt="Persistent State" class="h-6 md:h-7 w-auto object-contain">
+                
+                <div class="flex items-center gap-2">
+                    <img src="https://placehold.co/30x30/white/475569?text=M" alt="Memory Icon" class="h-6 w-auto">
+                    <span class="text-[#475569] font-semibold tracking-tighter">MEMORY LABS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
